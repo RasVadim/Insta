@@ -43,6 +43,7 @@ Nemo enim ipsam voluptatem, nam libero tempore, cum soluta nobis est eligendi op
           account_name="will_smith" 
           src_avatar="https://sun9-9.userapi.com/c857632/v857632958/1cf83b/-Ii4b3lnuA8.jpg" 
           a_profile="https://www.google.ru/" />
+
         </div> 
 
      	<aside class="stor">
@@ -71,32 +72,37 @@ Nemo enim ipsam voluptatem, nam libero tempore, cum soluta nobis est eligendi op
 	  			<a href="" class="head_aside_a">All</a>
 	  		</div>
 	  		<div class="rec_list">
-	  			<div class="account_block" >
-            <accountBlock 
-              account_name="white-rse" 
-              account_status="1 HOURS AGO" 
-              src_avatar="https://sun9-35.userapi.com/c857632/v857632958/1cf842/w7KQWygceQE.jpg" 
-              a_profile="https://www.google.ru/" />
-            <button class="subscribe">Subscribe</button>
-          </div>
 
-	  			<div class="account_block" >
-            <accountBlock 
-              account_name="tim-ote" 
-              account_status="1 HOURS AGO" 
-              src_avatar="https://sun9-35.userapi.com/c857632/v857632958/1cf842/w7KQWygceQE.jpg" 
-              a_profile="https://www.google.ru/" />
-            <button class="subscribe">Subscribe</button>
-          </div>
+          
+        <!-- <div class="rec_list_acc" > 
 
-	  			<div class="account_block" >
             <accountBlock 
-              account_name="and-bim" 
-              account_status="2 HOURS AGO" 
-              src_avatar="https://sun9-35.userapi.com/c857632/v857632958/1cf842/w7KQWygceQE.jpg" 
-              a_profile="https://www.google.ru/" />
-            <button class="subscribe">Subscribe</button>
-          </div>
+              v-for="(account) in this.accountsForReccomendations"
+              :key="account.id"
+              :account_data="account" 
+              />
+             
+        </div>   
+
+        <div class="rec_list_btn" >  
+
+
+              <button v-for="(account) in this.accountsForReccomendations"
+              :key="account.id" 
+              class="subscribe"
+              >Subscribe</button>
+
+
+          </div> -->
+          <Div v-for="(account) in this.accountsForReccomendations"
+              :key="account.id"
+              :account_data="account" class="account_blok" >
+             <accountBlock />
+             <button class="subscribe"></button>
+          </Div>
+
+
+
 
 	  		</div>
      	</aside>
@@ -127,11 +133,18 @@ export default {
       let accountsForStories = arrayAccounts.filter(
         arrayAccounts => arrayAccounts.place === "stories"
       );
-      return{accountsForStories}
+      let accountsForReccomendations = arrayAccounts.filter(
+        arrayAccounts => arrayAccounts.place === "reccomendations"
+      );
+      let accountsForPost = arrayAccounts.filter(
+        arrayAccounts => arrayAccounts.place === "post"
+      );
+      
+      return{accountsForStories, accountsForReccomendations, accountsForPost}
   },
   methods:{
     ...mapActions([
-      'GET_ACCOUNTS_FROM_API'
+      'GET_ACCOUNTS_FROM_API',
     ]),
     FILTER_ACCOUNTS_FOR_STOREIS: function() {
       let arrayAccounts = this.$store.state.accounts;
@@ -143,7 +156,6 @@ export default {
   },
   mounted() {
     this.GET_ACCOUNTS_FROM_API()
-    // this.FILTER_ACCOUNTS_FOR_STOREIS()
   }
 };
 </script>
@@ -247,13 +259,31 @@ aside.aside_block{
       display: flex;
       justify-content: space-between;
       }
+
+    .rec_list{
+      display: flex;
+      overflow: auto;
+      height: 100%;
+      margin-right: -16px;
+      justify-content: space-between;
+    } 
+
+    //  .rec_list_acc{
+    //   display: inline-block;
+    //  }
      
+    .rec_list_btn{
+       justify-self: end;
+     }
+
       a.head_aside_a{
         font-size: 11px;
         font-weight: 600;
         }
 
       .subscribe{
+        padding: 18px;
+        display: block;
         margin-left: auto;
         background-color: white;
         border: none;

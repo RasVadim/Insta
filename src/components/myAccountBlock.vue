@@ -25,7 +25,6 @@ export default {
 <style scoped lang="scss">
 
     div.my_account{
-    grid-area: my_account;
     display: flex;
     height: 100%;
     }
