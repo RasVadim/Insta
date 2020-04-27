@@ -93,8 +93,9 @@ export default {
       return{}
   },
   computed:{
+    
      accountsForStories: function () {
-       let arrayAccounts = this.$store.state.accounts;
+        let arrayAccounts = this.$store.state.accounts;
         let accForStories = arrayAccounts.filter(
         arrayAccounts => arrayAccounts.place === "stories"
       );
@@ -108,6 +109,18 @@ export default {
       );
       return(accForReccomendations);
      },
+
+
+    // accountsForStories: function () { return accountsWithPlace("stories") },
+    // accountsForReccomendations: function () { return accountsWithPlace("reccomendations") },
+    // accountsWithPlace: function (place){
+    //     let arrayAccounts = this.$store.state.accounts;
+    //     let accForPlace = arrayAccounts.filter(
+    //     arrayAccounts => arrayAccounts.place === place
+    //   );
+    //   return accForPlace;
+    // }
+
 
   },
   methods:{
@@ -256,13 +269,14 @@ aside.aside_block{
   grid-column-gap: 0px;
   overflow: hidden;
   grid-template-columns:  1fr minmax(320px, 612px) 1fr ;
-  grid-template-rows: 80px minmax(350px, auto) ;
+  grid-template-rows: 100px minmax(350px, auto) ;
   grid-template-areas: 
     ". aside ."
     ". article ."
 }
 
        aside.stor{
+        overflow: auto;
         padding: 8px 0px 0px 0px;
 
       }
@@ -274,7 +288,7 @@ aside.aside_block{
         grid-column-gap: 0px;
         overflow: hidden;
         grid-template-columns: auto;
-        grid-template-rows: 80px;
+        grid-template-rows: 100px;
         grid-auto-columns: 0px;
         grid-auto-rows: 0px;
         grid-template-areas: 
@@ -314,7 +328,7 @@ aside.aside_block{
   grid-column-gap: 0px;
   overflow: hidden;
   grid-template-columns: minmax(115px, 1fr) minmax(115px, 1fr);
-  grid-template-rows: 80px minmax(350px, auto);
+  grid-template-rows: 100px minmax(350px, auto);
   grid-auto-columns: 0px;
   grid-template-areas: 
     " aside aside "
@@ -323,6 +337,7 @@ aside.aside_block{
 
       aside.stor{
          padding: 8px 0px 0px 0px;
+         overflow: auto;
         }
 
       aside.aside_block{  
@@ -332,7 +347,7 @@ aside.aside_block{
         grid-column-gap: 0px;
         overflow: hidden;
         grid-template-columns: auto;
-        grid-template-rows: 80px;
+        grid-template-rows: 100px;
         grid-auto-columns: 0px;
         grid-auto-rows: 0px;
         grid-template-areas: 

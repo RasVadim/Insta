@@ -80,16 +80,23 @@ a{
         }
 
    .account_name{
-          font-weight: 100;
-        }
+        font-weight: 100;
+        width: 85px;
+        text-align: center;
+      }
 
    .account_info{
         padding: 2px;
         }
-
-      .account_status{
+   .account_status{
       display: none;
         }
+
+   .account_avatar{
+      width: 60px;
+      height: 60px;
+  
+  }
 
 }
 
@@ -103,6 +110,8 @@ a{
 
      .account_name{
           font-weight: 100;
+          width: 85px;
+          text-align: center;
         }
 
       .account_info{
@@ -112,6 +121,11 @@ a{
       .account_status{
         display: none;
         }
+      .account_avatar{
+        width: 60px;
+        height: 60px;
+        }
+
 }
 
 </style>
