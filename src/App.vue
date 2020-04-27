@@ -28,7 +28,7 @@
 					</div>
 					<div class="profile">
 						<router-link to="/profile">
-							<img class="profile" src="https://sun9-9.userapi.com/c857632/v857632958/1cf83b/-Ii4b3lnuA8.jpg">
+							<img class="profile" src="https://sun9-49.userapi.com/c858236/v858236552/1e5f9b/sSxu8b-y60w.jpg">
 						</router-link>
 					</div>
 				</div>	

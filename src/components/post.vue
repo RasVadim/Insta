@@ -3,7 +3,7 @@
     <div class="head_post">
 
 
-        <accountBlock 
+        <accBlockPost 
         v-for="(account) in this.accountsForPost"
           :key="account.id"
           :account_data="account"
@@ -53,11 +53,11 @@
 
 <script>
 
-import accountBlock from "@/components/accountBlock.vue";
+import accBlockPost from "@/components/accBlockPost.vue";
 import {mapActions} from 'vuex'
 
 export default {
-  components: {accountBlock},
+  components: {accBlockPost},
   name: "post",
   props: {
     post_data:{

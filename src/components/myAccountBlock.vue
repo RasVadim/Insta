@@ -24,24 +24,33 @@ export default {
 
 <style scoped lang="scss">
 
-    div.my_account{
+  .my_account{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
     display: flex;
-    height: 100%;
-    }
+    align-items: center;
+    } 
 
-        .my_avatar{
-        display: block;
-        height: 100%;
-        width: auto;
-        border-radius: 50%;
-        }
+ .my_avatar{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  }
 
-        .my_name{
-        display: flex;
-        padding-left: 10px;
-        align-items: center;
-        font-weight: 600;
-        color: #3f3f3f;
-        }
+.my_name{
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+
+
+a{
+	text-decoration: none;
+	color: #3f3f3f;
+  font-size: 13px;
+}
 
 </style>
