@@ -70,4 +70,48 @@ a{
   font-size: 13px;
 }
 
+
+@media screen and (max-width: 1000px) and (min-width: 570px) {
+   
+    .account_block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+
+   .account_name{
+          font-weight: 100;
+        }
+
+   .account_info{
+        padding: 2px;
+        }
+
+      .account_status{
+      display: none;
+        }
+
+}
+
+@media screen and (max-width: 570px) {
+
+      .account_block{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+
+     .account_name{
+          font-weight: 100;
+        }
+
+      .account_info{
+        padding: 2px;
+        }
+
+      .account_status{
+        display: none;
+        }
+}
+
 </style>

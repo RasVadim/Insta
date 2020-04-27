@@ -6,11 +6,15 @@ Vue.use(Vuex);
 
 let store = new Vuex.Store({
   state: {
-    accounts:[]
+    accounts:[],
+    posts:[]
   },
   mutations: {
     SET_ACCOUNTS_TO_STATE: (state, accounts) => {
       state.accounts = accounts;
+    },
+    SET_POSTS_TO_STATE: (state, posts) => {
+      state.posts = posts;
     }
   },
   actions: {
@@ -26,11 +30,29 @@ let store = new Vuex.Store({
         console.log(error)
         return error;
       })
+    },
+
+    GET_POSTS_FROM_API({commit}){
+      return axios('http://localhost:3000/posts',{
+        method: "GET"
+      }) 
+      .then((posts) =>{
+        commit('SET_POSTS_TO_STATE', posts.data);
+        return posts;
+      })
+      .catch((error) => {
+        console.log(error)
+        return error;
+      })
     }
+
   },
   getters: {
     ACCOUNTS(state){
       return state.accounts;
+    },
+    POSTS(state){
+      return state.posts;
     }
   },
   modules: {}

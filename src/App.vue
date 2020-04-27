@@ -152,5 +152,35 @@
             border-radius: 50%;
         }
 
+@media screen and (max-width: 1000px) and (min-width: 570px) {
+  
+  header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr minmax(210px ,310px) 1fr;
+    grid-template-areas: 
+    " logo search icons"
+  } 
+
+}
+
+@media screen and (max-width: 570px) {
+    
+    header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-auto-columns: 0px;
+    grid-template-areas: 
+    "logo icons"
+  }
+}
+
 
 </style>

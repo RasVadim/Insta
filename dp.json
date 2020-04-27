@@ -97,6 +97,46 @@
         "place": "stories"
     },
     {
+        "id": "01",
+        "account_name": "ivan_urgant",
+        "account_status": "Russia, Moscow",
+        "src_avatar": "https://pbs.twimg.com/profile_images/529390024387596288/LfUXM3GC_400x400.jpeg",
+        "a_profile": "String",
+        "place": "stories"
+    },
+    {
+        "id": "02",
+        "account_name": "will_smith",
+        "account_status": "USA, Miami",
+        "src_avatar": "https://img.7ya.ru/slides/55/635489707667794237.jpg",
+        "a_profile": "String",
+        "place": "stories"
+    },
+    {
+        "id": "03",
+        "account_name": "tom_cruise",
+        "account_status": "",
+        "src_avatar": "https://2.bp.blogspot.com/-rHYg3vhMsvg/WiahreCzDFI/AAAAAAAAAmQ/9slh_7his5gJkG-m5Ff6NmbvZmFaSxfkgCLcBGAs/s1600/tom-cruise-9262645-1-402.jpg",
+        "a_profile": "String",
+        "place": "stories"
+    },
+    {
+        "id": "04",
+        "account_name": "alex_clare",
+        "account_status": "Canada, Vancouver",
+        "src_avatar": "http://www.intermedia.ru/img/news/340362.jpg",
+        "a_profile": "String",
+        "place": "stories"
+    },
+    {
+        "id": "05",
+        "account_name": "tim_roth",
+        "account_status": "",
+        "src_avatar": "https://sun9-66.userapi.com/c540100/v540100213/f64e/vaPShPJhDHQ.jpg",
+        "a_profile": "String",
+        "place": "stories"
+    },
+    {
         "id": "13",
         "account_name": "keanu_reeves",
         "account_status": "4 HOURS AGO",
@@ -124,6 +164,7 @@
 
 "posts": [
     {
+        "id": "001",
         "user_id": "01",
         "img_post": "https://tekno10.cubecdn.net/wp-content/uploads/2019/08/instagram-takip-engeli-kaldirma-1-1024x683.jpg",
         "liked_people": "name_user",
@@ -132,6 +173,7 @@
     },
     
     {
+        "id": "002",
         "user_id": "02",
         "img_post": "https://www.brokenheadholidaypark.com.au/wp-content/uploads/2018/10/iphone-2203712_1280-e1540251427416.jpg",
         "liked_people": "name_user",
@@ -140,6 +182,7 @@
     },
   
     {
+        "id": "003",
         "user_id": "03",
         "img_post": "https://atlassteak.com/wp-content/uploads/27.jpeg",
         "liked_people": "name_user",
@@ -148,6 +191,7 @@
     },
   
     {
+        "id": "004",
         "user_id": "04",
         "img_post": "https://tekno10.cubecdn.net/wp-content/uploads/2020/02/instagram-kronolojik-siralama-nasil-1024x683.jpg",
         "liked_people": "name_user",
@@ -156,6 +200,7 @@
     },
   
     {
+        "id": "005",
         "user_id": "05",
         "img_post": "https://cdn.fw-daily.com/2017/05/How-To-Instagram-Pics-Travel-1500x1000-1140x760.jpg",
         "liked_people": "name_user",

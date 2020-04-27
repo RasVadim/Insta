@@ -1,14 +1,18 @@
 <template>
     <div class="body_post">
     <div class="head_post">
+
+
         <accountBlock 
-      account_name="ivan_urgant" 
-      account_status="Russia, Moscow" 
-      src_avatar="https://sun9-35.userapi.com/c857632/v857632958/1cf842/w7KQWygceQE.jpg" 
-      a_profile="https://www.google.ru/" />
+        v-for="(account) in this.accountsForPost"
+          :key="account.id"
+          :account_data="account"
+        />
+
+
     </div>
     <div class="img_post">
-        <img class="img_post" :src="img_post">
+        <img class="img_post" :src="post_data.img_post">
     </div>
     <div class="icons_post">
         <div class="like_i_post">
@@ -33,13 +37,13 @@
         </div>
     </div>
     <div class="liked_people">
-    Liked by <a class="liked_people" href="">{{liked_people}}</a> and <a class="liked_people" href="">others</a>
+    Liked by <a class="liked_people" href="">{{post_data.liked_people}}</a> and <a class="liked_people" href="">others</a>
     </div>
     <div class="text_post">
-        {{text_post}}
+        {{post_data.text_post}}
     </div>
     <div class="time_post">
-        {{time_post}}
+        {{post_data.time_post}}
     </div>
     <div class="comment_post">
         <input type="text" placeholder="Add comment..." class="comment_input">
@@ -50,16 +54,44 @@
 <script>
 
 import accountBlock from "@/components/accountBlock.vue";
+import {mapActions} from 'vuex'
 
 export default {
   components: {accountBlock},
   name: "post",
   props: {
-    img_post: String,
-    liked_people: String,
-    text_post: String,
-    time_post: String
-  }
+    post_data:{
+      type: Object,
+      default() {
+        return {}
+    }
+   },
+  },
+
+  computed:{
+      
+      accountsForPost: function () {
+        let arrayAccounts = this.$store.state.accounts;
+      let accs_ForPost = arrayAccounts.filter(
+        arrayAccounts => arrayAccounts.place === "post"
+      );
+      let accForPost =  accs_ForPost.filter(
+         accs_ForPost =>  accs_ForPost.id === this.post_data.user_id
+      );
+      return(accForPost);
+     },
+ },
+
+  methods:{
+    ...mapActions([
+      'GET_ACCOUNTS_FROM_API'
+    ]),
+  },
+
+  mounted() {
+    this.GET_ACCOUNTS_FROM_API()
+    },
+
 };
 </script>
 
@@ -178,4 +210,16 @@ export default {
         color: #a2a2a2;
         }     
 
+@media screen and (max-width: 1000px) and (min-width: 570px) {
+        .body_post{
+        margin-bottom: 14px;
+        }
+
+}
+
+@media screen and (max-width: 570px) {
+   .body_post{
+        margin-bottom: 6px;
+  }
+}
 </style>
