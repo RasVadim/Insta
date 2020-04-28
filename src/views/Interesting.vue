@@ -64,7 +64,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(["GET_ACCOUNTS_FROM_API", "GET_POSTS_FROM_API"])
+    ...mapActions(["GET_ACCOUNTS_FROM_API"])
   },
   mounted() {
     this.GET_ACCOUNTS_FROM_API();

@@ -41,7 +41,7 @@
                 class="account_block"
               >
                 <accountBlock :account_data="account" />
-                <button @click="POSTS_CONS" class="subscribe">Subscribe</button>
+                <button class="subscribe">Subscribe</button>
               </div>
             </div>
           </aside>
@@ -110,9 +110,6 @@ export default {
   },
   methods: {
     ...mapActions(["GET_ACCOUNTS_FROM_API", "GET_POSTS_FROM_API"]),
-    POSTS_CONS: function() {
-      console.log(this.$store.state.posts);
-    }
   },
   mounted() {
     this.GET_ACCOUNTS_FROM_API();

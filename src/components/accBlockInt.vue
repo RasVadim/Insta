@@ -15,7 +15,7 @@
       </div>
       <div class="account_status">{{ account_data.account_status }}</div>
     </div>
-    <button @click="POSTS_CONS" class="subscribe">Subscribe</button>
+    <button class="subscribe">Subscribe</button>
   </div>
 </template>
 
