@@ -57,30 +57,30 @@ export default {
       type: Object,
       default() {
         return {};
-      }
-    }
+      },
+    },
   },
 
   computed: {
     accountsForPost: function() {
       let arrayAccounts = this.$store.state.accounts;
       let accs_ForPost = arrayAccounts.filter(
-        arrayAccounts => arrayAccounts.place === "post"
+        (arrayAccounts) => arrayAccounts.place === "post"
       );
       let accForPost = accs_ForPost.filter(
-        accs_ForPost => accs_ForPost.id === this.post_data.user_id
+        (accs_ForPost) => accs_ForPost.id === this.post_data.user_id
       );
       return accForPost;
-    }
+    },
   },
 
   methods: {
-    ...mapActions(["GET_ACCOUNTS_FROM_API"])
+    ...mapActions(["GET_ACCOUNTS_FROM_API"]),
   },
 
   mounted() {
     this.GET_ACCOUNTS_FROM_API();
-  }
+  },
 };
 </script>
 
@@ -98,7 +98,7 @@ export default {
   grid-template-columns: 100%;
   grid-row-gap: 5px;
   grid-template-rows:
-    56px minmax(250px, auto) 40px minmax(18px, auto) minmax(70px, auto)
+    56px auto 40px minmax(18px, auto) minmax(70px, auto)
     18px 56px;
   grid-template-areas:
     "head_post"

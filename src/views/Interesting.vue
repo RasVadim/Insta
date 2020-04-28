@@ -28,7 +28,7 @@
             <div class="one_photo"></div>
             <div class="one_photo"></div>
             <div class="one_photo"></div>
-            <div class="one_photo"></div>
+            <div class="one_photo">hello</div>
             <div class="one_photo"></div>
             <div class="one_photo"></div>
             <div class="one_photo"></div>
@@ -83,7 +83,7 @@ export default {
   display: grid;
   grid-row-gap: 14px;
   grid-column-gap: 28px;
-  grid-template-columns: 1fr minmax(810px, 975px) 1fr;
+  grid-template-columns: 1fr minmax(100px, 975px) 1fr;
   grid-template-rows: 260px auto;
   grid-template-areas:
     ". int_people ."
@@ -133,7 +133,7 @@ article.list_int_people::-webkit-scrollbar-thumb {
   display: grid;
   grid-gap: 28px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(auto-fit, 290px);
+  grid-template-rows: repeat(auto-fit, 1fr);
 
 }
 
