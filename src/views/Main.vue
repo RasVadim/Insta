@@ -47,17 +47,19 @@
           </aside>
           <footer>
             <a class="footer">Information</a>
-            <a>Help</a> | 
-            <a>Press</a> | 
-            <a>API</a> | 
-            <a>Job openings</a> |  
-            <a>Privacy</a> | 
-            <a>Conditions</a> | 
-            <a>Locations</a> | 
-            <a>Popular accounts</a> | 
-            <a>Hashtags</a> | 
+            <a>Help</a> |
+            <a>Press</a> |
+            <a>API</a> |
+            <a>Job openings</a> |
+            <a>Privacy</a> |
+            <a>Conditions</a> |
+            <a>Locations</a> |
+            <a>Popular accounts</a> |
+            <a>Hashtags</a> |
             Language
-            <p><br>© INSTA.GRAM FROM VR-DEV, 2020</p>
+            <p>
+              <br />© INSTA.GRAM FROM VR-DEV, 2020
+            </p>
           </footer>
         </aside>
       </aside>
@@ -200,7 +202,7 @@ aside.stor {
 
 .head_aside {
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 600;
   color: #bbbbbb;
 }
 
@@ -240,11 +242,11 @@ footer {
   grid-area: footer;
   color: #cccccc;
   font-size: 11px;
-  a{
-    color:#cccccc;
+  a {
+    color: #cccccc;
     font-size: 11px;
   }
-  p{
+  p {
     font-size: 12px;
   }
 }

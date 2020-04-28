@@ -12,49 +12,33 @@
     </div>
     <div class="icons_post">
       <div class="like_i_post">
-        <a class="like_i_post" href="">
-          <img
-            class="like_i_post"
-            src="https://psv4.userapi.com/c856336/u22601940/docs/d1/499f900b7c4f/liked.png?extra=D8pYPCQG1LCmyhGN4M1pYJqo97_svDqqrBMq-w9Xf9wmY057b7ZEoBbC0Dy6-3w__xNkJZplGxAckIX7F9GwQrTLKqwL8GNzskTtdKdeQwPt1rQGxja5dYprQ62_dXd2fv8OEFi7ka-DG9R6C3EtGg"
-          />
+        <a class="like_i_post" href>
+          <img class="like_i_post" src="../../images/liked.png" />
         </a>
       </div>
       <div class="com_i_post">
-        <a class="com_i_post" href="">
-          <img
-            class="com_i_post"
-            src="https://psv4.userapi.com/c856336/u22601940/docs/d6/2c4455d28f47/icon_com.png?extra=3IkJx47NeBFb6ZFfi4L96xG5w0OAdvm3fc29dhCsHdvtc4Ac03ePPbsqjEUVdSSI2Pu_5f0n5_eJndre6Bw8eKBF6DyrawENGQRCTi8CvPYmlkc4O_hxmA1tE9Z_YpZ95284S8s_ZP9kr2p6Gguoug"
-          />
+        <a class="com_i_post" href>
+          <img class="com_i_post" src="../../images/icon_com.png" />
         </a>
       </div>
       <div class="dir_i_post">
-        <a class="dir_i_post" href="">
-          <img
-            class="dir_i_post"
-            src="https://psv4.userapi.com/c856336/u22601940/docs/d16/c992238a2db6/icon_dir.png?extra=FQYoRZ09Ni-tV6M7gIWDHGCWD9fwQ-UnUpFmsHa8KGIL598rQGMu0dJkkDD_Tq-Eg4kSPB9V01sIKu0G6DpkUsziCZ4efYF5Zv58zFVJ3mbZOYsRWisHnxo9Ag1sa1WbkqxwZVGicLrV8ZbPWHvNaA"
-          />
+        <a class="dir_i_post" href>
+          <img class="dir_i_post" src="../../images/icon_dir.png" />
         </a>
       </div>
       <div class="fav_i_post">
-        <a class="fav_i_post" href="">
-          <img
-            class="fav_i_post"
-            src="https://psv4.userapi.com/c856336/u22601940/docs/d10/30288228a956/icon_fav.png?extra=TGeGtdahRYClPnLG5owWClATxu4DtTIJbsj8KutYQevJPqJQrhM7RgfQDx3ge0EqMf_s_paeaDut_4B4Zpax0lcBk_3Z8_V8FtABd9FUbqocM3yAkOb5egjVkrDhoQMo8uScv6WILLRsXNgrauycXQ"
-          />
+        <a class="fav_i_post" href>
+          <img class="fav_i_post" src="../../images/icon_fav.png" />
         </a>
       </div>
     </div>
     <div class="liked_people">
       Liked by
-      <a class="liked_people" href="">{{ post_data.liked_people }}</a> and
-      <a class="liked_people" href="">others</a>
+      <a class="liked_people" href>{{ post_data.liked_people }}</a> and
+      <a class="liked_people" href>others</a>
     </div>
-    <div class="text_post">
-      {{ post_data.text_post }}
-    </div>
-    <div class="time_post">
-      {{ post_data.time_post }}
-    </div>
+    <div class="text_post">{{ post_data.text_post }}</div>
+    <div class="time_post">{{ post_data.time_post }}</div>
     <div class="comment_post">
       <input type="text" placeholder="Add comment..." class="comment_input" />
     </div>
@@ -73,30 +57,30 @@ export default {
       type: Object,
       default() {
         return {};
-      },
-    },
+      }
+    }
   },
 
   computed: {
     accountsForPost: function() {
       let arrayAccounts = this.$store.state.accounts;
       let accs_ForPost = arrayAccounts.filter(
-        (arrayAccounts) => arrayAccounts.place === "post"
+        arrayAccounts => arrayAccounts.place === "post"
       );
       let accForPost = accs_ForPost.filter(
-        (accs_ForPost) => accs_ForPost.id === this.post_data.user_id
+        accs_ForPost => accs_ForPost.id === this.post_data.user_id
       );
       return accForPost;
-    },
+    }
   },
 
   methods: {
-    ...mapActions(["GET_ACCOUNTS_FROM_API"]),
+    ...mapActions(["GET_ACCOUNTS_FROM_API"])
   },
 
   mounted() {
     this.GET_ACCOUNTS_FROM_API();
-  },
+  }
 };
 </script>
 

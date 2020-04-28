@@ -5,7 +5,7 @@
 	     	<header class="logo">
 	     		<div class="logo_head">
 					 <router-link to="/">
-							<img class="logo_head" src="https://psv4.userapi.com/c856336/u22601940/docs/d9/198275e85237/logo.png?extra=74D5qsGxw2ooccGlHEhpwRmlHbZuqzWY8arkNih032_UMm_nOm7FP-0yv_Qy0t-xHjf7Tw0qpDD29pEwk5xCrtOcj1EadUW5fNVMfFcfT3PXaeeK8vBxTWeueyRkQ2n20H2iGdjqqoGduvlRitNmZg">
+							<img class="logo_head" src="../images/logo.png">
 					</router-link>
 				</div>
 	     	</header>
@@ -18,12 +18,12 @@
 	     		<div class="icons_head">
 					<div class="interesting">
 						<router-link to="/interesting">
-							<img class="interesting" src="https://psv4.userapi.com/c856336/u22601940/docs/d11/62d496083ce6/interesting.png?extra=s-Sb5840AmqVIs3y9HkR7TRaJ3f3z5AEEULjojMalr2rvrNMtmffCNknJr-4V3HjMaONuiRPcpUmedCTJWwCWBORKSc1LWBYgj5UdnHtFH8SEYHHN5nCuUHYdaO_i-PJtqbz2t8sYbFdkb2sRVXYaA">
+							<img class="interesting" src="../images/interesting.png">
 						</router-link>	
 					</div>
 					<div class="liked">
 						<router-link to="/liked">
-							<img class="liked" src="https://psv4.userapi.com/c856336/u22601940/docs/d1/499f900b7c4f/liked.png?extra=D8pYPCQG1LCmyhGN4M1pYJqo97_svDqqrBMq-w9Xf9wmY057b7ZEoBbC0Dy6-3w__xNkJZplGxAckIX7F9GwQrTLKqwL8GNzskTtdKdeQwPt1rQGxja5dYprQ62_dXd2fv8OEFi7ka-DG9R6C3EtGg">
+							<img class="liked" src="../images/liked.png">
 						</router-link>	
 					</div>
 					<div class="profile">
@@ -41,10 +41,13 @@
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 
+  sans-serif, Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: #8e8e8e;
+  background-color: #fafafa;
   font-size: 14px;
   line-height: 18px;
 }
