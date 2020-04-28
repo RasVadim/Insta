@@ -1,212 +1,211 @@
 {
-"accounts": [
+  "accounts": [
     {
-        "id": "01",
-        "account_name": "ivan_urgant",
-        "account_status": "Russia, Moscow",
-        "src_avatar": "https://pbs.twimg.com/profile_images/529390024387596288/LfUXM3GC_400x400.jpeg",
-        "a_profile": "String",
-        "place": "post"
+      "id": "01",
+      "account_name": "ivan_urgant",
+      "account_status": "Russia, Moscow",
+      "src_avatar": "https://pbs.twimg.com/profile_images/529390024387596288/LfUXM3GC_400x400.jpeg",
+      "a_profile": "String",
+      "place": "post"
     },
     {
-        "id": "02",
-        "account_name": "will_smith",
-        "account_status": "USA, Miami",
-        "src_avatar": "https://img.7ya.ru/slides/55/635489707667794237.jpg",
-        "a_profile": "String",
-        "place": "post"
+      "id": "02",
+      "account_name": "will_smith",
+      "account_status": "USA, Miami",
+      "src_avatar": "https://img.7ya.ru/slides/55/635489707667794237.jpg",
+      "a_profile": "String",
+      "place": "post"
     },
     {
-        "id": "03",
-        "account_name": "tom_cruise",
-        "account_status": "",
-        "src_avatar": "https://2.bp.blogspot.com/-rHYg3vhMsvg/WiahreCzDFI/AAAAAAAAAmQ/9slh_7his5gJkG-m5Ff6NmbvZmFaSxfkgCLcBGAs/s1600/tom-cruise-9262645-1-402.jpg",
-        "a_profile": "String",
-        "place": "post"
+      "id": "03",
+      "account_name": "tom_cruise",
+      "account_status": "",
+      "src_avatar": "https://2.bp.blogspot.com/-rHYg3vhMsvg/WiahreCzDFI/AAAAAAAAAmQ/9slh_7his5gJkG-m5Ff6NmbvZmFaSxfkgCLcBGAs/s1600/tom-cruise-9262645-1-402.jpg",
+      "a_profile": "String",
+      "place": "post"
     },
     {
-        "id": "04",
-        "account_name": "alex_clare",
-        "account_status": "Canada, Vancouver",
-        "src_avatar": "http://www.intermedia.ru/img/news/340362.jpg",
-        "a_profile": "String",
-        "place": "post"
+      "id": "04",
+      "account_name": "alex_clare",
+      "account_status": "Canada, Vancouver",
+      "src_avatar": "http://www.intermedia.ru/img/news/340362.jpg",
+      "a_profile": "String",
+      "place": "post"
     },
     {
-        "id": "05",
-        "account_name": "tim_roth",
-        "account_status": "",
-        "src_avatar": "https://sun9-66.userapi.com/c540100/v540100213/f64e/vaPShPJhDHQ.jpg",
-        "a_profile": "String",
-        "place": "post"
+      "id": "05",
+      "account_name": "tim_roth",
+      "account_status": "France, Paris",
+      "src_avatar": "https://sun9-66.userapi.com/c540100/v540100213/f64e/vaPShPJhDHQ.jpg",
+      "a_profile": "String",
+      "place": "post"
     },
     {
-        "id": "06",
-        "account_name": "pavel_volay",
-        "account_status": "1 HOURS AGO",
-        "src_avatar": "http://images-on-off.com/images/92/pavelvolyabiografiyafoto-df49a9e5.jpeg",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "06",
+      "account_name": "pavel_volay",
+      "account_status": "1 HOURS AGO",
+      "src_avatar": "http://images-on-off.com/images/92/pavelvolyabiografiyafoto-df49a9e5.jpeg",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "07",
-        "account_name": "kris_nolan",
-        "account_status": "2 HOURS AGO",
-        "src_avatar": "https://media.nbcmiami.com/2019/09/88648.jpg?fit=300%2C300",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "07",
+      "account_name": "kris_nolan",
+      "account_status": "2 HOURS AGO",
+      "src_avatar": "https://media.nbcmiami.com/2019/09/88648.jpg?fit=300%2C300",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "08",
-        "account_name": "mark_wahlberg",
-        "account_status": "3 HOURS AGO",
-        "src_avatar": "https://www.aceshowbiz.com/images/wennpic/preview/mark-wahlberg-at-the-bbc-radio-1-studios-01.jpg",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "08",
+      "account_name": "mark_wahlberg",
+      "account_status": "3 HOURS AGO",
+      "src_avatar": "https://www.aceshowbiz.com/images/wennpic/preview/mark-wahlberg-at-the-bbc-radio-1-studios-01.jpg",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "09",
-        "account_name": "matt_damon",
-        "account_status": "3 HOURS AGO",
-        "src_avatar": "https://cdn.images.express.co.uk/img/dynamic/79/590x/425387_1.jpg",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "09",
+      "account_name": "matt_damon",
+      "account_status": "3 HOURS AGO",
+      "src_avatar": "https://cdn.images.express.co.uk/img/dynamic/79/590x/425387_1.jpg",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "10",
-        "account_name": "mike_tyson",
-        "account_status": "4 HOURS AGO",
-        "src_avatar": "https://ilarge.lisimg.com/image/6210862/740full-mike-tyson.jpg",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "10",
+      "account_name": "mike_tyson",
+      "account_status": "4 HOURS AGO",
+      "src_avatar": "https://ilarge.lisimg.com/image/6210862/740full-mike-tyson.jpg",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "11",
-        "account_name": "steve_jobs",
-        "account_status": "4 HOURS AGO",
-        "src_avatar": "https://avatars.mds.yandex.net/get-zen_doc/1692094/pub_5e68888d46a9ca23527819ae_5e68898029742b2ae9c08b7c/scale_1200",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "11",
+      "account_name": "steve_jobs",
+      "account_status": "4 HOURS AGO",
+      "src_avatar": "https://avatars.mds.yandex.net/get-zen_doc/1692094/pub_5e68888d46a9ca23527819ae_5e68898029742b2ae9c08b7c/scale_1200",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "12",
-        "account_name": "brad_pitt",
-        "account_status": "4 HOURS AGO",
-        "src_avatar": "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY3MDUxMjkzMjI1OTIwMTcz/brad-pitt-attends-the-premiere-of-20th-century-foxs--square.jpg",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "12",
+      "account_name": "brad_pitt",
+      "account_status": "4 HOURS AGO",
+      "src_avatar": "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY3MDUxMjkzMjI1OTIwMTcz/brad-pitt-attends-the-premiere-of-20th-century-foxs--square.jpg",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "01",
-        "account_name": "ivan_urgant",
-        "account_status": "Russia, Moscow",
-        "src_avatar": "https://pbs.twimg.com/profile_images/529390024387596288/LfUXM3GC_400x400.jpeg",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "01",
+      "account_name": "ivan_urgant",
+      "account_status": "Russia, Moscow",
+      "src_avatar": "https://pbs.twimg.com/profile_images/529390024387596288/LfUXM3GC_400x400.jpeg",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "02",
-        "account_name": "will_smith",
-        "account_status": "USA, Miami",
-        "src_avatar": "https://img.7ya.ru/slides/55/635489707667794237.jpg",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "02",
+      "account_name": "will_smith",
+      "account_status": "USA, Miami",
+      "src_avatar": "https://img.7ya.ru/slides/55/635489707667794237.jpg",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "03",
-        "account_name": "tom_cruise",
-        "account_status": "",
-        "src_avatar": "https://2.bp.blogspot.com/-rHYg3vhMsvg/WiahreCzDFI/AAAAAAAAAmQ/9slh_7his5gJkG-m5Ff6NmbvZmFaSxfkgCLcBGAs/s1600/tom-cruise-9262645-1-402.jpg",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "03",
+      "account_name": "tom_cruise",
+      "account_status": "",
+      "src_avatar": "https://2.bp.blogspot.com/-rHYg3vhMsvg/WiahreCzDFI/AAAAAAAAAmQ/9slh_7his5gJkG-m5Ff6NmbvZmFaSxfkgCLcBGAs/s1600/tom-cruise-9262645-1-402.jpg",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "04",
-        "account_name": "alex_clare",
-        "account_status": "Canada, Vancouver",
-        "src_avatar": "http://www.intermedia.ru/img/news/340362.jpg",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "04",
+      "account_name": "alex_clare",
+      "account_status": "Canada, Vancouver",
+      "src_avatar": "http://www.intermedia.ru/img/news/340362.jpg",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "05",
-        "account_name": "tim_roth",
-        "account_status": "",
-        "src_avatar": "https://sun9-66.userapi.com/c540100/v540100213/f64e/vaPShPJhDHQ.jpg",
-        "a_profile": "String",
-        "place": "stories"
+      "id": "05",
+      "account_name": "tim_roth",
+      "account_status": "",
+      "src_avatar": "https://sun9-66.userapi.com/c540100/v540100213/f64e/vaPShPJhDHQ.jpg",
+      "a_profile": "String",
+      "place": "stories"
     },
     {
-        "id": "13",
-        "account_name": "keanu_reeves",
-        "account_status": "4 HOURS AGO",
-        "src_avatar": "https://creeto.com/wp-content/uploads/Keanu-Reeves.jpg",
-        "a_profile": "String",
-        "place": "reccomendations"
+      "id": "13",
+      "account_name": "keanu_reeves",
+      "account_status": "4 HOURS AGO",
+      "src_avatar": "https://creeto.com/wp-content/uploads/Keanu-Reeves.jpg",
+      "a_profile": "String",
+      "place": "reccomendations"
     },
     {
-        "id": "14",
-        "account_name": "jonny_depp",
-        "account_status": "5 HOURS AGO",
-        "src_avatar": "https://ae01.alicdn.com/kf/HTB1LUHBBcuYBuNkSmRyq6AA3pXaL/-.jpg_350x350.jpg",
-        "a_profile": "String",
-        "place": "reccomendations"
+      "id": "14",
+      "account_name": "jonny_depp",
+      "account_status": "5 HOURS AGO",
+      "src_avatar": "https://ae01.alicdn.com/kf/HTB1LUHBBcuYBuNkSmRyq6AA3pXaL/-.jpg_350x350.jpg",
+      "a_profile": "String",
+      "place": "reccomendations"
     },
     {
-        "id": "15",
-        "account_name": "luke_evans",
-        "account_status": "5 HOURS AGO",
-        "src_avatar": "https://i.pinimg.com/236x/83/bf/64/83bf64e318e9f80d66e5e936b32ceabb.jpg",
-        "a_profile": "String",
-        "place": "reccomendations"
+      "id": "15",
+      "account_name": "luke_evans",
+      "account_status": "5 HOURS AGO",
+      "src_avatar": "https://i.pinimg.com/236x/83/bf/64/83bf64e318e9f80d66e5e936b32ceabb.jpg",
+      "a_profile": "String",
+      "place": "reccomendations"
     }
-],
+  ],
 
-"posts": [
+  "posts": [
     {
-        "id": "001",
-        "user_id": "01",
-        "img_post": "https://tekno10.cubecdn.net/wp-content/uploads/2019/08/instagram-takip-engeli-kaldirma-1-1024x683.jpg",
-        "liked_people": "name_user",
-        "text_post": "Lorem ipsum dolor sit amet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? \n Ut enim ad minima veniam, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus!",
-        "time_post": "1 HOURS AGO"
+      "id": "001",
+      "user_id": "01",
+      "img_post": "https://tekno10.cubecdn.net/wp-content/uploads/2019/08/instagram-takip-engeli-kaldirma-1-1024x683.jpg",
+      "liked_people": "name_user",
+      "text_post": "Lorem ipsum dolor sit amet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua? \n Ut enim ad minima veniam, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus!",
+      "time_post": "1 HOURS AGO"
     },
-    
+
     {
-        "id": "002",
-        "user_id": "02",
-        "img_post": "https://www.brokenheadholidaypark.com.au/wp-content/uploads/2018/10/iphone-2203712_1280-e1540251427416.jpg",
-        "liked_people": "name_user",
-        "text_post": "At vero eos et accusamus et iusto odio dignissimos ducimus, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n Lorem ipsum dolor sit amet, quis nostrum exercitationem ullam corporis suscipit laboriosam, ut et voluptates repudiandae sint et molestiae non recusandae! \n Nemo enim ipsam voluptatem, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, ut et voluptates repudiandae sint et molestiae non recusandae.",
-        "time_post": "2 HOURS AGO"
+      "id": "002",
+      "user_id": "02",
+      "img_post": "https://www.brokenheadholidaypark.com.au/wp-content/uploads/2018/10/iphone-2203712_1280-e1540251427416.jpg",
+      "liked_people": "name_user",
+      "text_post": "At vero eos et accusamus et iusto odio dignissimos ducimus, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n Lorem ipsum dolor sit amet, quis nostrum exercitationem ullam corporis suscipit laboriosam, ut et voluptates repudiandae sint et molestiae non recusandae! \n Nemo enim ipsam voluptatem, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "time_post": "2 HOURS AGO"
     },
-  
+
     {
-        "id": "003",
-        "user_id": "03",
-        "img_post": "https://atlassteak.com/wp-content/uploads/27.jpeg",
-        "liked_people": "name_user",
-        "text_post": "Lorem ipsum dolor sit amet, quis nostrum exercitationem ullam corporis suscipit laboriosam, ut et voluptates repudiandae sint et molestiae non recusandae!",
-        "time_post": "3 HOURS AGO"
+      "id": "003",
+      "user_id": "03",
+      "img_post": "https://atlassteak.com/wp-content/uploads/27.jpeg",
+      "liked_people": "name_user",
+      "text_post": "Lorem ipsum dolor sit amet, quis nostrum exercitationem ullam corporis suscipit laboriosam, ut et voluptates repudiandae sint et molestiae non recusandae!",
+      "time_post": "3 HOURS AGO"
     },
-  
+
     {
-        "id": "004",
-        "user_id": "04",
-        "img_post": "https://tekno10.cubecdn.net/wp-content/uploads/2020/02/instagram-kronolojik-siralama-nasil-1024x683.jpg",
-        "liked_people": "name_user",
-        "text_post": "Nemo enim ipsam voluptatem, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, ut et voluptates repudiandae sint et molestiae non recusandae.",
-        "time_post": "3 HOURS AGO"
+      "id": "004",
+      "user_id": "04",
+      "img_post": "https://tekno10.cubecdn.net/wp-content/uploads/2020/02/instagram-kronolojik-siralama-nasil-1024x683.jpg",
+      "liked_people": "name_user",
+      "text_post": "Nemo enim ipsam voluptatem, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "time_post": "3 HOURS AGO"
     },
-  
+
     {
-        "id": "005",
-        "user_id": "05",
-        "img_post": "https://cdn.fw-daily.com/2017/05/How-To-Instagram-Pics-Travel-1500x1000-1140x760.jpg",
-        "liked_people": "name_user",
-        "text_post": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, consectetur adipiscing elit, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo! Sed ut perspiciatis, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, qui dolorem eum fugiat, quo voluptas nulla pariatur! At vero eos et accusamus...",
-        "time_post": "4 HOURS AGO"
+      "id": "005",
+      "user_id": "05",
+      "img_post": "https://cdn.fw-daily.com/2017/05/How-To-Instagram-Pics-Travel-1500x1000-1140x760.jpg",
+      "liked_people": "name_user",
+      "text_post": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, consectetur adipiscing elit, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo! Sed ut perspiciatis, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, qui dolorem eum fugiat, quo voluptas nulla pariatur! At vero eos et accusamus...",
+      "time_post": "4 HOURS AGO"
     }
-    
-]
+  ]
 }

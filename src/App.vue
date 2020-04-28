@@ -174,7 +174,7 @@
     top: 0;
     display: grid;
     overflow: hidden;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(96px, 1fr) minmax(72px, 1fr);
     grid-template-rows: 100%;
     grid-auto-columns: 0px;
     grid-template-areas: 

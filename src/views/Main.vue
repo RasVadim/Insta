@@ -2,11 +2,7 @@
   <div class="main">
     <div class="main_grid">
       <article>
-        <post
-          v-for="post in this.$store.state.posts"
-          :key="post.id"
-          :post_data="post"
-        />
+        <post v-for="post in this.$store.state.posts" :key="post.id" :post_data="post" />
       </article>
 
       <aside class="aside">
@@ -22,7 +18,7 @@
           <aside class="stor">
             <div class="stories_header">
               <div class="head_aside">Stories</div>
-              <a href="" class="head_aside_a">view all</a>
+              <a href class="head_aside_a">view all</a>
             </div>
             <div class="stories_list">
               <accountBlock
@@ -36,7 +32,7 @@
           <aside class="rec">
             <div class="rec_header">
               <div class="head_aside">Recommendations</div>
-              <a href="" class="head_aside_a">All</a>
+              <a href class="head_aside_a">All</a>
             </div>
             <div class="rec_list">
               <div
@@ -50,37 +46,18 @@
             </div>
           </aside>
           <footer>
-            <a class="footer">
-              Information
-            </a>
-            <a>
-              Help
-            </a>
-            <a>
-              Press
-            </a>
-            <a>
-              API
-            </a>
-            <a>
-              Job openings
-            </a>
-            <a>
-              Privacy
-            </a>
-            <a>
-              Conditions
-            </a>
-            <a>
-              Locations
-            </a>
-            <a>
-              Popular accounts
-            </a>
-            <a>
-              Hashtags
-            </a>
+            <a class="footer">Information</a>
+            <a>Help</a> | 
+            <a>Press</a> | 
+            <a>API</a> | 
+            <a>Job openings</a> |  
+            <a>Privacy</a> | 
+            <a>Conditions</a> | 
+            <a>Locations</a> | 
+            <a>Popular accounts</a> | 
+            <a>Hashtags</a> | 
             Language
+            <p><br>© INSTA.GRAM FROM VR-DEV, 2020</p>
           </footer>
         </aside>
       </aside>
@@ -106,7 +83,7 @@ export default {
     accountsForStories: function() {
       let arrayAccounts = this.$store.state.accounts;
       let accForStories = arrayAccounts.filter(
-        (arrayAccounts) => arrayAccounts.place === "stories"
+        arrayAccounts => arrayAccounts.place === "stories"
       );
       return accForStories;
     },
@@ -114,10 +91,10 @@ export default {
     accountsForReccomendations: function() {
       let arrayAccounts = this.$store.state.accounts;
       let accForReccomendations = arrayAccounts.filter(
-        (arrayAccounts) => arrayAccounts.place === "reccomendations"
+        arrayAccounts => arrayAccounts.place === "reccomendations"
       );
       return accForReccomendations;
-    },
+    }
 
     // accountsForStories: function () { return accountsWithPlace("stories") },
     // accountsForReccomendations: function () { return accountsWithPlace("reccomendations") },
@@ -133,12 +110,12 @@ export default {
     ...mapActions(["GET_ACCOUNTS_FROM_API", "GET_POSTS_FROM_API"]),
     POSTS_CONS: function() {
       console.log(this.$store.state.posts);
-    },
+    }
   },
   mounted() {
     this.GET_ACCOUNTS_FROM_API();
     this.GET_POSTS_FROM_API();
-  },
+  }
 };
 </script>
 
@@ -261,7 +238,15 @@ a.head_aside_a {
 
 footer {
   grid-area: footer;
-  background-color: gray;
+  color: #cccccc;
+  font-size: 11px;
+  a{
+    color:#cccccc;
+    font-size: 11px;
+  }
+  p{
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 570px) {
