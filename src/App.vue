@@ -39,7 +39,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 #app {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
   Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 

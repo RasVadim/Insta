@@ -16,7 +16,26 @@
       </div>
       <div class="interesting">
         <header class="head_interesting">Interesting</header>
-        <article class="list_interesting"></article>
+        <article class="list_interesting">
+          <div class="grid_photo_int">
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+            <div class="one_photo"></div>
+          </div>
+        </article>
       </div>
     </div>
   </div>
@@ -86,6 +105,12 @@ export default {
   }
 }
 
+.head_interesting {
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+}
+
 .list_int_people {
   display: flex;
   overflow: auto;
@@ -104,4 +129,16 @@ article.list_int_people::-webkit-scrollbar-thumb {
 .interesting {
   grid-area: interesting;
 }
+.grid_photo_int{
+  display: grid;
+  grid-gap: 28px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto-fit, 290px);
+
+}
+
+.one_photo{
+  background-color: coral;
+}
+
 </style>
