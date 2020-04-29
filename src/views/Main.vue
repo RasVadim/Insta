@@ -2,7 +2,11 @@
   <div class="main">
     <div class="main_grid">
       <article>
-        <post v-for="post in this.$store.state.posts" :key="post.id" :post_data="post" />
+        <post
+          v-for="post in this.$store.state.posts"
+          :key="post.id"
+          :post_data="post"
+        />
       </article>
 
       <aside class="aside">
@@ -47,19 +51,10 @@
           </aside>
           <footer>
             <a class="footer">Information</a>
-            <a>Help</a> |
-            <a>Press</a> |
-            <a>API</a> |
-            <a>Job openings</a> |
-            <a>Privacy</a> |
-            <a>Conditions</a> |
-            <a>Locations</a> |
-            <a>Popular accounts</a> |
-            <a>Hashtags</a> |
-            Language
-            <p>
-              <br />© INSTA.GRAM FROM VR-DEV, 2020
-            </p>
+            <a>Help</a> | <a>Press</a> | <a>API</a> | <a>Job openings</a> |
+            <a>Privacy</a> | <a>Conditions</a> | <a>Locations</a> |
+            <a>Popular accounts</a> | <a>Hashtags</a> | Language
+            <p><br />© INSTA.GRAM FROM VR-DEV, 2020</p>
           </footer>
         </aside>
       </aside>
@@ -85,7 +80,7 @@ export default {
     accountsForStories: function() {
       let arrayAccounts = this.$store.state.accounts;
       let accForStories = arrayAccounts.filter(
-        arrayAccounts => arrayAccounts.place === "stories"
+        (arrayAccounts) => arrayAccounts.place === "stories"
       );
       return accForStories;
     },
@@ -93,10 +88,10 @@ export default {
     accountsForReccomendations: function() {
       let arrayAccounts = this.$store.state.accounts;
       let accForReccomendations = arrayAccounts.filter(
-        arrayAccounts => arrayAccounts.place === "reccomendations"
+        (arrayAccounts) => arrayAccounts.place === "reccomendations"
       );
       return accForReccomendations;
-    }
+    },
 
     // accountsForStories: function () { return accountsWithPlace("stories") },
     // accountsForReccomendations: function () { return accountsWithPlace("reccomendations") },
@@ -114,7 +109,7 @@ export default {
   mounted() {
     this.GET_ACCOUNTS_FROM_API();
     this.GET_POSTS_FROM_API();
-  }
+  },
 };
 </script>
 
@@ -300,6 +295,9 @@ footer {
     background-color: #bbbbbb;
     border-radius: 20%;
   }
+  aside.stor {
+    border-style: none solid solid solid;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -354,6 +352,9 @@ footer {
   .stories_list::-webkit-scrollbar-thumb {
     background-color: #bbbbbb;
     border-radius: 20%;
+  }
+  aside.stor {
+    border-style: none solid solid solid;
   }
 }
 </style>

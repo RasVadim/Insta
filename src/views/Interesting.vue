@@ -18,29 +18,19 @@
         <header class="head_interesting">Interesting</header>
         <article class="list_interesting">
           <div class="grid_photo_int">
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo">hello</div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
-            <div class="one_photo"></div>
+            <div
+              v-for="image in this.$store.state.images"
+              :key="image.id"
+              :class="image.id"
+            >
+              <img :src="image.link" alt="img" />
+            </div>
           </div>
         </article>
       </div>
     </div>
   </div>
 </template>
-
 
 <script>
 // @ is an alias to /src
@@ -58,32 +48,31 @@ export default {
     accountsForInteresting: function() {
       let arrayAccounts = this.$store.state.accounts;
       let accForInteresting = arrayAccounts.filter(
-        arrayAccounts => arrayAccounts.place === "interesting"
+        (arrayAccounts) => arrayAccounts.place === "interesting"
       );
       return accForInteresting;
-    }
+    },
   },
   methods: {
-    ...mapActions(["GET_ACCOUNTS_FROM_API"])
+    ...mapActions(["GET_ACCOUNTS_FROM_API", "GET_IMAGES_FROM_API"]),
   },
   mounted() {
     this.GET_ACCOUNTS_FROM_API();
-  }
+    this.GET_IMAGES_FROM_API();
+  },
 };
 </script>
 
-
 <style scoped lang="scss">
 .main_interesting {
-  padding: 40px 20px 0px 20px;
+  padding-top: 40px;
 }
 
 .main_grid_interesting {
   background-color: #fafafa;
   display: grid;
-  grid-row-gap: 14px;
-  grid-column-gap: 28px;
-  grid-template-columns: 1fr minmax(100px, 975px) 1fr;
+  grid-gap: 28px;
+  grid-template-columns: 1fr minmax(100px, 928px) 1fr;
   grid-template-rows: 260px auto;
   grid-template-areas:
     ". int_people ."
@@ -99,6 +88,7 @@ export default {
   justify-content: space-between;
   font-weight: 600;
   font-size: 16px;
+  padding-bottom: 5px;
   a {
     font-weight: 600;
     color: #0095f6;
@@ -109,6 +99,7 @@ export default {
   display: flex;
   font-weight: 600;
   font-size: 16px;
+  padding: 16px 16px 16px 0;
 }
 
 .list_int_people {
@@ -129,16 +120,51 @@ article.list_int_people::-webkit-scrollbar-thumb {
 .interesting {
   grid-area: interesting;
 }
-.grid_photo_int{
+.grid_photo_int {
   display: grid;
   grid-gap: 28px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(auto-fit, 1fr);
-
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-template-rows: repeat(9, auto);
 }
 
-.one_photo{
+.i01{
+  
+}
+
+img {
+  width: 100%;
+  height: auto;
   background-color: coral;
 }
 
+@media screen and (max-width: 735px) {
+  .main_interesting {
+    padding: 0px;
+  }
+
+  .main_grid_interesting {
+    background-color: #fafafa;
+    display: grid;
+    grid-row-gap: 14px;
+    grid-column-gap: 0px;
+    overflow: hidden;
+    grid-template-columns: minmax(100px, 755px);
+    grid-template-rows: auto;
+    grid-auto-columns: 0px;
+    grid-auto-rows: 0px;
+    grid-template-areas: "interesting";
+  }
+
+  .head_interesting {
+    padding: 20px;
+  }
+
+  .grid_photo_int {
+    display: grid;
+    grid-column-gap: 4px;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(3, minmax(auto, 1fr));
+    grid-template-rows: repeat(9, auto);
+  }
+}
 </style>

@@ -7,7 +7,8 @@ Vue.use(Vuex);
 let store = new Vuex.Store({
   state: {
     accounts:[],
-    posts:[]
+    posts:[],
+    images:[]
   },
   mutations: {
     SET_ACCOUNTS_TO_STATE: (state, accounts) => {
@@ -15,6 +16,9 @@ let store = new Vuex.Store({
     },
     SET_POSTS_TO_STATE: (state, posts) => {
       state.posts = posts;
+    },
+    SET_IMAGES_TO_STATE: (state, images) => {
+      state.images = images;
     }
   },
   actions: {
@@ -44,6 +48,20 @@ let store = new Vuex.Store({
         console.log(error)
         return error;
       })
+    },
+
+    GET_IMAGES_FROM_API({commit}){
+      return axios('http://localhost:3000/images',{
+        method: "GET"
+      }) 
+      .then((images) =>{
+        commit('SET_IMAGES_TO_STATE', images.data);
+        return images;
+      })
+      .catch((error) => {
+        console.log(error)
+        return error;
+      })
     }
 
   },
@@ -53,6 +71,9 @@ let store = new Vuex.Store({
     },
     POSTS(state){
       return state.posts;
+    },
+    IMAGES(state){
+      return state.images;
     }
   },
   modules: {}
