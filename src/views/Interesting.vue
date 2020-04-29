@@ -18,11 +18,7 @@
         <header class="head_interesting">Interesting</header>
         <article class="list_interesting">
           <div class="grid_photo_int">
-            <div
-              v-for="image in this.$store.state.images"
-              :key="image.id"
-              :class="image.id"
-            >
+            <div v-for="image in this.$store.state.images" :key="image.id" :class="image.id">
               <img :src="image.link" alt="img" />
             </div>
           </div>
@@ -48,18 +44,18 @@ export default {
     accountsForInteresting: function() {
       let arrayAccounts = this.$store.state.accounts;
       let accForInteresting = arrayAccounts.filter(
-        (arrayAccounts) => arrayAccounts.place === "interesting"
+        arrayAccounts => arrayAccounts.place === "interesting"
       );
       return accForInteresting;
-    },
+    }
   },
   methods: {
-    ...mapActions(["GET_ACCOUNTS_FROM_API", "GET_IMAGES_FROM_API"]),
+    ...mapActions(["GET_ACCOUNTS_FROM_API", "GET_IMAGES_FROM_API"])
   },
   mounted() {
     this.GET_ACCOUNTS_FROM_API();
     this.GET_IMAGES_FROM_API();
-  },
+  }
 };
 </script>
 
@@ -125,10 +121,6 @@ article.list_int_people::-webkit-scrollbar-thumb {
   grid-gap: 28px;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
   grid-template-rows: repeat(9, auto);
-}
-
-.i01{
-  
 }
 
 img {
