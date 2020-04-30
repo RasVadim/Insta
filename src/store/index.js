@@ -37,7 +37,8 @@ let store = new Vuex.Store({
     },
 
     GET_POSTS_FROM_API({commit}){
-      return axios('http://localhost:3000/posts',{
+      const isFakeServer = true;
+      return axios(isFakeServer ? "../fake-server/posts.json" : "http://localhost:4000/posts",{
         method: "GET"
       }) 
       .then((posts) =>{
