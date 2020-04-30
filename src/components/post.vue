@@ -13,22 +13,22 @@
     <div class="icons_post">
       <div class="like_i_post">
         <a class="like_i_post" href>
-          <img class="like_i_post" src="../../images/liked.png" />
+          <img class="like_i_post i_post" src="../../images/liked_u.png" />
         </a>
       </div>
       <div class="com_i_post">
         <a class="com_i_post" href>
-          <img class="com_i_post" src="../../images/icon_com.png" />
+          <img class="com_i_post i_post" src="../../images/icon_com_u.png" />
         </a>
       </div>
       <div class="dir_i_post">
         <a class="dir_i_post" href>
-          <img class="dir_i_post" src="../../images/icon_dir.png" />
+          <img class="dir_i_post i_post" src="../../images/icon_dir_u.png" />
         </a>
       </div>
       <div class="fav_i_post">
         <a class="fav_i_post" href>
-          <img class="fav_i_post" src="../../images/icon_fav.png" />
+          <img class="fav_i_post i_post" src="../../images/icon_fav_u.png" />
         </a>
       </div>
     </div>
@@ -131,6 +131,11 @@ export default {
   grid-template-columns: 22px 22px 22px 1fr;
   grid-column-gap: 8px;
   grid-template-areas: "like_i_post com_i_post dir_i_post fav_i_post";
+}
+
+.i_post{
+  width: 22px;
+  height: 22px;
 }
 
 .like_i_post {

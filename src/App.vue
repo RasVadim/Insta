@@ -18,12 +18,12 @@
           <div class="icons_head">
             <div class="interesting">
               <router-link to="/interesting">
-                <img class="interesting" src="../images/interesting.png" />
+                <img class="interesting" src="../images/interesting_u.png" />
               </router-link>
             </div>
             <div class="liked">
               <router-link to="/liked">
-                <img class="liked" src="../images/liked.png" />
+                <img class="liked" src="../images/liked_u.png" />
               </router-link>
             </div>
             <div class="profile">
