@@ -139,7 +139,7 @@ aside.aside {
 
 aside.aside_block {
   position: sticky;
-  top: 83px;
+  top: 85px;
 
   background-color: #fafafa;
   display: grid;
@@ -320,6 +320,7 @@ footer {
   }
 
   aside.aside_block {
+    position: sticky;
     background-color: #fafafa;
     display: grid;
     grid-row-gap: 0px;

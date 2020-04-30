@@ -71,6 +71,7 @@
 .head_grid {
   position: sticky;
   top: 0;
+  z-index: 100;
   background-color: white;
   border-style: none none solid none;
   border-color: #dbdbdb;
