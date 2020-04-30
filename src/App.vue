@@ -5,7 +5,7 @@
         <header class="logo">
           <div class="logo_head">
             <router-link to="/">
-              <img class="logo_head" src="../images/logo.png" />
+              <img class="logo_head" src="images/logo.png" />
             </router-link>
           </div>
         </header>
@@ -18,12 +18,12 @@
           <div class="icons_head">
             <div class="interesting">
               <router-link to="/interesting">
-                <img class="interesting" src="../images/interesting_u.png" />
+                <img class="interesting" src="images/interesting_u.png" />
               </router-link>
             </div>
             <div class="liked">
               <router-link to="/liked">
-                <img class="liked" src="../images/liked_u.png" />
+                <img class="liked" src="images/liked_u.png" />
               </router-link>
             </div>
             <div class="profile">

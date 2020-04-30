@@ -13,22 +13,22 @@
     <div class="icons_post">
       <div class="like_i_post">
         <a class="like_i_post" href>
-          <img class="like_i_post i_post" src="../../images/liked_u.png" />
+          <img class="like_i_post i_post" src="images/liked_u.png" />
         </a>
       </div>
       <div class="com_i_post">
         <a class="com_i_post" href>
-          <img class="com_i_post i_post" src="../../images/icon_com_u.png" />
+          <img class="com_i_post i_post" src="images/icon_com_u.png" />
         </a>
       </div>
       <div class="dir_i_post">
         <a class="dir_i_post" href>
-          <img class="dir_i_post i_post" src="../../images/icon_dir_u.png" />
+          <img class="dir_i_post i_post" src="images/icon_dir_u.png" />
         </a>
       </div>
       <div class="fav_i_post">
         <a class="fav_i_post" href>
-          <img class="fav_i_post i_post" src="../../images/icon_fav_u.png" />
+          <img class="fav_i_post i_post" src="images/icon_fav_u.png" />
         </a>
       </div>
     </div>
