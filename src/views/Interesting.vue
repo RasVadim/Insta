@@ -18,7 +18,11 @@
         <header class="head_interesting">Interesting</header>
         <article class="list_interesting">
           <div class="grid_photo_int">
-            <div v-for="image in this.$store.state.images" :key="image.id" :class="image.id">
+            <div 
+            v-for="image in this.$store.state.images" 
+            :key="image.id" 
+            :class="image.id"
+            >
               <img :src="image.link" alt="img" />
             </div>
           </div>
@@ -121,6 +125,21 @@ article.list_int_people::-webkit-scrollbar-thumb {
   grid-gap: 28px;
   grid-template-columns: repeat(3, minmax(auto, 1fr));
   grid-template-rows: repeat(9, auto);
+}
+
+.i02{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.i10{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.i20{
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 img {

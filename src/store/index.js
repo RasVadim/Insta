@@ -25,7 +25,7 @@ let store = new Vuex.Store({
     GET_ACCOUNTS_FROM_API({ commit }) {
       const isFakeServer = true;
       return axios(
-        isFakeServer ? "fake-server/accounts.json" : "http://localhost:4000/accounts", {
+        isFakeServer ? "fake-server/accounts.json" : "http://localhost:3000/accounts", {
         method: "GET",
       })
         .then((accounts) => {
@@ -41,7 +41,7 @@ let store = new Vuex.Store({
     GET_POSTS_FROM_API({ commit }) {
       const isFakeServer = true;
       return axios(
-        isFakeServer ? "fake-server/posts.json" : "http://localhost:4000/posts",
+        isFakeServer ? "fake-server/posts.json" : "http://localhost:3000/posts",
         {
           method: "GET",
         }
@@ -59,7 +59,7 @@ let store = new Vuex.Store({
     GET_IMAGES_FROM_API({ commit }) {
       const isFakeServer = true;
       return axios(
-        isFakeServer ? "fake-server/images.json" : "http://localhost:4000/images", {
+        isFakeServer ? "fake-server/images.json" : "http://localhost:3000/images", {
         method: "GET",
       })
         .then((images) => {
@@ -69,7 +69,8 @@ let store = new Vuex.Store({
         .catch((error) => {
           console.log(error);
           return error;
-        });
+        })
+        
     },
   },
   getters: {

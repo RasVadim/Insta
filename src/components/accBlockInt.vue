@@ -36,7 +36,7 @@ export default {
 <style scoped lang="scss">
 .account_block {
   height: 166px;
-  width: 146px;
+  min-width: 138px;
   padding: 16px;
   font-size: 14px;
   line-height: 18px;
