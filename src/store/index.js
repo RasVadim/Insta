@@ -49,7 +49,7 @@ let store = new Vuex.Store({
           return posts;
         })
         .catch((error) => {
-          console.log(error);
+          console.log('GET_POSTS_FROM_API error:', error);
           return error;
         });
     },
